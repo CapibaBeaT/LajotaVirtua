@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu-hz {
+  background-color: azure;
+  text-align: right;
+  width: 100%;
+  height: 75px;
+}
+.menu-hz a:hover {
+  background-color: tomato;
+  color: azure;
+  transition: 0.5s;
+  height: 75px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-flex;
+}
+
+nav ul li a {
+  position: relative;
+  padding: 22px 0 5px;
+  margin: 0 25px;
+  color: #505050;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+}
+
+/* LOGIN */
+.tela-login {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: (-50%, -50%);
+  padding: 80px;
+  border-radius: 15px;
+  color: white;
+}
+
+/******************************/
+/* [START] Seção do carrousel */
+/******************************/
+/* start-Parametros_de_elementos_typeDisplay */
+.slider {
+  margin-top: 2px;
+  width: 1920px;
+  height: 600px;
+  overflow: hidden;
+}
+.slides {
+  width: 500%;
+  height: 600px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide img {
+  width: 1920px;
+}
+.slide {
+  width: 20%;
+  position: relative;
+  transition: 2s;
+}
+/* end-Parametros_de_elementos_typeDisplay */
+/* start-Ajustes_de_botões_tipo_manual */
+.manual-navigation {
+  position: absolute;
+  width: 1920px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  border: 2px solid cornsilk;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.manual-btn:hover {
+  background-color: white;
+}
+/* end-Ajustes_de_botões_tipo_manual */
+/* start-Blocando_os_Slides_na_TimeLine */
+#radio1:checked ~ .first {
+  margin-left: 0%;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+/* end-Blocando_os_Slides_na_TimeLine */
+/* start-Ajustes_de_botões_tipo_auto */
+.navigation-auto div {
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.navigation-auto {
+  position: absolute;
+  width: 1920px;
+  margin-top: 560px;
+  display: flex;
+  justify-content: center;
+}
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+/* end-Ajustes_de_botões_tipo_auto */
+/* start-Color-Radio-Ativo */
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #fff;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background-color: #fff;
+}
+/* end-Color-Radio-Ativo */
+/****************************/
+/* [END] Seção do carrousel */
+/****************************/
+
+/* MID */
+.meio {
+  background-color: rgb(213, 226, 232);
+  width: 1920px;
+  height: 1000px;
+  margin-top: -28px;
+}
+
+.menu-lat {
+  width: 250px;
+  height: 527px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 2px 3px 15px -4px #505050;
+  border-radius: 3px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 28px;
+}
+
+.nav2 ul {
+  list-style: none;
+}
+
+.nav2 ul li {
+  line-height: 45px;
+}
+
+.nav2 ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+  color: #505050;
+  border-bottom: 1px solid;
+}
+
+.nav2 ul li a:hover {
+  color: tomato;
+  transition: 0.8s;
+}
+
+.nav2 ul ul li a {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  margin-left: -38px;
+}
+
+/* .nav2 ul ul {
+  display: none;
+}
+
+.nav2 ul .itensPerfume.mostra {
+  display: block;
+}
+.nav2 ul .itensMaquiagem.mostra {
+  display: block;
+}
+.nav2 ul .itensCorpo.mostra {
+  display: block;
+} */

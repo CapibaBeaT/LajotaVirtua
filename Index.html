@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--start-secção-Cabeçalho-->
+    <!--start-Menu-Navegação-->
+    <div class="menu-hz">
+      <nav>
+        <ul>
+          <li><a href="Index.html">Página Inicial</a></li>
+          <li><a href="about.html">Sobre nós</a></li>
+          <li><a href="contact.html">Contate-nos</a></li>
+          <li><a href="login.html">Efetue seu login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--end-Menu-Navegação-->
+    <!--end-secção-Cabeçalho-->
+
+    <!--start-carrousel-->
+    <div class="slider">
+      <div class="slides">
+        <!--start-Radio-Buttons-->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <input type="radio" name="radio-btn" id="radio5" />
+        <!--end-Radio-Buttons-->
+
+        <!--start-Slide-Imgs-->
+        <!--slide_1-->
+        <div class="slide first">
+          <img
+            src="imgs/bnr1.jpg"
+            alt="TROCAR_accessibility1"
+            width="1920"
+            height="600"
+          />
+        </div>
+        <!--slide_2-->
+        <div class="slide">
+          <img
+            src="imgs/bnr2.jpg"
+            alt="TROCAR_accessibility2"
+            width="1920"
+            height="600"
+          />
+        </div>
+        <!--slide_3-->
+        <div class="slide">
+          <img
+            src="imgs/bnr3.jpg"
+            alt="TROCAR_accessibility3"
+            width="1920"
+            height="600"
+          />
+        </div>
+        <!--slide_4-->
+        <div class="slide">
+          <img
+            src="imgs/bnr4.jpg"
+            alt="TROCAR_accessibility4"
+            width="1920"
+            height="600"
+          />
+        </div>
+        <!--slide_5-->
+        <div class="slide">
+          <img
+            src="imgs/bnr5.jpg"
+            alt="TROCAR_accessibility5"
+            width="1920"
+            height="600"
+          />
+        </div>
+        <!--end-Slide-Imgs-->
+
+        <!--start-Navigation-Slides-Auto-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+        <!--end-Navigation-Slides-->
+      </div>
+      <!--start-Navigation-Slides-Manual-->
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+      </div>
+      <!--end-Navigation-Slides-Manual-->
+    </div>
+    <!--end-carrousel-->
+
+    <div class="meio">
+      <div class="menu-lat">
+        <div class="nav2">
+          <ul>
+            <li>
+              <a href="#" class="menuPerfume">PERFUMARIA ></a
+              ><!--1-->
+              <ul class="itensPerfume">
+                <li><a href="#">Masculino</a></li>
+                <!--1.1-->
+
+                <li><a href="#">Feminino</a></li>
+                <!--1.2-->
+              </ul>
+              <br />
+            </li>
+
+            <li>
+              <a href="#" class="menuMaquiagem">MAQUIAGEM ></a
+              ><!--2-->
+              <ul class="itensMaquiagem">
+                <li><a href="#">Boca</a></li>
+                <!--2.1-->
+
+                <li><a href="#">Olhos</a></li>
+                <!--2.2-->
+
+                <li><a href="#">Rosto</a></li>
+                <!--2.3-->
+              </ul>
+              <br />
+            </li>
+
+            <li>
+              <a class="menuCorpo" href="#">CORPO E BANHO ></a>
+            </li>
+            <!--3-->
+
+            <ul class="itensCorpo">
+              <li><a href="#">Cuidados com o corpo</a></li>
+              <!--3.1-->
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="script/script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyC3YRZ2W9ztO7EY0wX5yfn4FB0ZYajgVAI",
+        authDomain: "lajotavirtua.firebaseapp.com",
+        projectId: "lajotavirtua",
+        storageBucket: "lajotavirtua.appspot.com",
+        messagingSenderId: "462809817799",
+        appId: "1:462809817799:web:9d09d64588668fedb094e2",
+        measurementId: "G-ZHXBZKFQ6P",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
